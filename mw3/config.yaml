@@ -1,0 +1,12 @@
+config:
+  install_tree:
+    root: /software/sw/spack-mw3/apps
+  install_hash_length: 7
+  template_dirs:
+    - /software/sw/spack-mw3/local/templates
+  build_stage: /scratch/midway3/$USER/stage
+  test_stage: /scratch/midway3/$USER/test
+  source_cache: /scratch/midway3/$USER/source_cache
+  misc_cache: /scratch/midway3/$USER/misc_cache
+  build_jobs: 8
+  url_fetch_method: curl

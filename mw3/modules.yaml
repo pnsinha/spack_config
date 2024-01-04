@@ -1,0 +1,72 @@
+modules:
+  default:
+    tcl:
+      # Core compiler is a dummy that is not used to build the stack, do not change.
+      core_compilers:
+      - gcc@=8.4.1
+      exclude:
+      # List of packages for which we don't need modules
+      - autoconf
+      - automake
+      - berkeley-db
+      - bison
+      - bzip2
+      - diffutils
+      - expat
+      - findutils
+      - fixesproto
+      - flex
+      - freetype
+      - gdbm
+      - googletest
+      - hwloc
+      - inputproto
+      - kbproto
+      - libaec
+      - libedit
+      - libevent
+      - libfabric
+      - libffi
+      - libgeotiff
+      - libice
+      - libiconv
+      - libpciaccess
+      - libpthread-stubs
+      - libsigsegv
+      - libsm
+      - libtiff
+      - libtool
+      - libx11
+      - libxau
+      - libxcb
+      - libxdmcp
+      - libxext
+      - libxfixes
+      - libxi
+      - libxml
+      - libxml2
+      - libxrandr
+      - libxrender
+      - libxxf86vm
+      - lz4
+      - m4
+      - mysql
+      - nasm
+      - ncurses
+      - openssh
+      - openssl
+      - perl
+      - pkgconf
+      - qhull
+      - qt
+      - randrproto
+      - readline
+      - renderproto
+      - xcb-proto
+      - xextproto
+      - xf86vidmodeproto
+      - xproto
+      - xrandr
+      - xtrans
+      - xz
+      - yaksa
