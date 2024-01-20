@@ -145,3 +145,8 @@ packages:
           c: /software/intel/parallel_studio_xe_2020_update1/bin/icc
           cxx: /software/intel/parallel_studio_xe_2020_update1/bin/icpc
           fortran: /software/intel/parallel_studio_xe_2020_update1/bin/ifort
+  slurm:
+    externals:
+    - spec: slurm@20.11.8
+      prefix: /software/slurm-current-el8-x86_64
+

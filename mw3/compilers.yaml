@@ -38,3 +38,74 @@ compilers:
     modules: []
     environment: {}
     extra_rpaths: []
+- compiler:
+    spec: aocc@=4.1.0
+    paths:
+      cc: /software/aocc-4.1.0-el8-x86_64-amd/bin/clang
+      cxx: /software/aocc-4.1.0-el8-x86_64-amd/bin/clang++
+      f77: /software/aocc-4.1.0-el8-x86_64-amd/bin/flang
+      fc: /software/aocc-4.1.0-el8-x86_64-amd/bin/flang
+    flags:
+      cflags: null
+      cxxflags: null
+      fflags: null
+    operating_system: centos8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: aocc@=3.1.0
+    paths:
+      cc: /software/aocc-3.1.0-el8-x86_64-amd/bin/clang
+      cxx: /software/aocc-3.1.0-el8-x86_64-amd/bin/clang++
+      f77: /software/aocc-3.1.0-el8-x86_64-amd/bin/flang
+      fc: /software/aocc-3.1.0-el8-x86_64-amd/bin/flang
+    flags:
+      cflags: null
+      cxxflags: null
+      fflags: null
+    operating_system: centos8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: clang@=13.0.0
+    paths:
+      cc: /software/clang-13.0.0-el8-x86_64/bin/clang
+      cxx: /software/clang-13.0.0-el8-x86_64/bin/clang++
+      f77: null
+      fc: null
+    flags: {}
+    operating_system: centos8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: dpcpp@=2024.0.1
+    paths:
+      cc: /software/sw/spack-mw3/apps/linux-centos8-cascadelake/gcc-12.2.0/intel-oneapi-compilers-2024.0.1-uq3nka6/compiler/2024.0/bin/icx
+      cxx: /software/sw/spack-mw3/apps/linux-centos8-cascadelake/gcc-12.2.0/intel-oneapi-compilers-2024.0.1-uq3nka6/compiler/2024.0/bin/dpcpp
+      f77: /software/sw/spack-mw3/apps/linux-centos8-cascadelake/gcc-12.2.0/intel-oneapi-compilers-2024.0.1-uq3nka6/compiler/2024.0/bin/ifx
+      fc: /software/sw/spack-mw3/apps/linux-centos8-cascadelake/gcc-12.2.0/intel-oneapi-compilers-2024.0.1-uq3nka6/compiler/2024.0/bin/ifx
+    flags: {}
+    operating_system: centos8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: oneapi@=2024.0.1
+    paths:
+      cc: /software/sw/spack-mw3/apps/linux-centos8-cascadelake/gcc-12.2.0/intel-oneapi-compilers-2024.0.1-uq3nka6/compiler/2024.0/bin/icx
+      cxx: /software/sw/spack-mw3/apps/linux-centos8-cascadelake/gcc-12.2.0/intel-oneapi-compilers-2024.0.1-uq3nka6/compiler/2024.0/bin/icpx
+      f77: /software/sw/spack-mw3/apps/linux-centos8-cascadelake/gcc-12.2.0/intel-oneapi-compilers-2024.0.1-uq3nka6/compiler/2024.0/bin/ifx
+      fc: /software/sw/spack-mw3/apps/linux-centos8-cascadelake/gcc-12.2.0/intel-oneapi-compilers-2024.0.1-uq3nka6/compiler/2024.0/bin/ifx
+    flags: {}
+    operating_system: centos8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
