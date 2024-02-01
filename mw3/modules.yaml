@@ -1,7 +1,17 @@
 modules:
-  default:
-    tcl:
-      # Core compiler is a dummy that is not used to build the stack, do not change.
+ default:
+  enable:
+    - tcl
+  roots:
+    tcl: /software/sw/spack-mw3/modulefiles
+ # remove architecture-specific directory   
+  arch_folder: false
+  tcl:
+      hash_length: 7
+      projections:
+        all: '{name}/{version}-{compiler.name}-{compiler.version}-module'
+        ^mpi: '{name}/{version}-{^mpi.name}-{^mpi.version}-{compiler.name}-{compiler.version}-module'
+# Core compiler is a dummy that is not used to build the stack, do not change.
       core_compilers:
       - gcc@=8.4.1
       exclude:

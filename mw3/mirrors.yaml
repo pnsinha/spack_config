@@ -1,0 +1,4 @@
+mirrors:
+ m3mirror: /software/sw/shared/bootstrap
+   spack-public:
+      binary: True
