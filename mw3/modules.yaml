@@ -7,10 +7,11 @@ modules:
  # remove architecture-specific directory   
   arch_folder: false
   tcl:
-      hash_length: 7
+      exclude_implicits: true
+      hash_length: 0
       projections:
-        all: '{name}/{version}-{compiler.name}-{compiler.version}-module'
-        ^mpi: '{name}/{version}-{^mpi.name}-{^mpi.version}-{compiler.name}-{compiler.version}-module'
+        all: '{name}/{version}-{compiler.name}-{compiler.version}'
+        ^mpi: '{name}/{version}-{^mpi.name}-{^mpi.version}-{compiler.name}-{compiler.version}'
 # Core compiler is a dummy that is not used to build the stack, do not change.
       core_compilers:
       - gcc@=8.4.1

@@ -9,4 +9,5 @@ config:
   source_cache: /scratch/midway3/$USER/source_cache
   misc_cache: /scratch/midway3/$USER/misc_cache
   build_jobs: 8
+  SPACK_DISABLE_LOCAL_CONFIG: true
   url_fetch_method: curl

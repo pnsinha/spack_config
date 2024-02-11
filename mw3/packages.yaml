@@ -82,8 +82,8 @@ packages:
     - spec: openmpi@4.1.1%gcc@=8.4.1+cuda+cxx~cxx_exceptions~java~memchecker+pmi~static~wrapper-rpath
         fabrics=ucx schedulers=slurm
       prefix: /software/openmpi-cuda-aware-4.1.1-el8-x86_64
-    - spec: "openmpi@4.1.2%gcc@7.4.0 arch=linux-centos8-x86_64"
-      prefix: /software/openmpi-4.1.2-el8-x86_64+gcc-7.4.0
+    - spec: openmpi@4.1.2%gcc@10.2.0+pmi fabrics=ucx schedulers=slurm
+      prefix: /software/openmpi-4.1.2-el8-x86_64+gcc-10.2.0
     - spec: "openmpi@4.1.2%aocc@3.1.0 arch=linux-centos8-x86_64"
       prefix: /software/openmpi-4.1.2-el8-x86_64-amd+aocc-3.1.0
   mpich:
@@ -121,10 +121,6 @@ packages:
     externals:
     - spec: xz@5.2.4
       prefix: /usr
-  openjdk:
-    externals:
-    - spec: openjdk@1.8.0_282-b08
-      prefix: /usr
   opengl:
     externals:
     - spec: opengl@3.1
@@ -149,4 +145,4 @@ packages:
     externals:
     - spec: slurm@20.11.8
       prefix: /software/slurm-current-el8-x86_64
-
+    buildable: False

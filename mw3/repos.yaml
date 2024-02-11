@@ -1,2 +1,4 @@
 repos:
-  - /software/sw/spack-mw3/local/repo/m3icon
+  - $spack/var/spack/repos/builtin
+  - /software/sw/spack-mw3/local/repos/mw3
+#  - /software/sw/spack-mw3/local/repos/m3icon
